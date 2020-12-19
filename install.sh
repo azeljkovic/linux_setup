@@ -124,4 +124,5 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 # before this step you need to exit ohmyzsh by typing exit
 echo -e "\e[93m********** adding ohmyzsh configurataion **********\e[0m"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 wget -O ".zshrc" https://raw.githubusercontent.com/azeljkovic/linux_setup/main/.zshrc
