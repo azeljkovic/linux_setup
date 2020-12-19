@@ -73,6 +73,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
 	git
 	zsh-interactive-cd
+	zsh-autosuggestions
 	)
 
 source $ZSH/oh-my-zsh.sh
