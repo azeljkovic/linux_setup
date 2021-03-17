@@ -1,5 +1,5 @@
 # linux_setup
-Shell script for initial setup of my Ubuntu Linux machines. The script will download and install software and download zsh configuration.
+Shell script for initial setup of my Ubuntu Linux machines.
 
 ## How to use it?
 1. Download the install.sh script  
