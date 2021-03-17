@@ -106,23 +106,3 @@ echo -e "\e[93m********** installing docker compose**********\e[0m"
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
-
-
-echo -e "\e[92m ---------------------------------------------------------\e[0m"
-echo -e "\e[92m Z shell/ohmyzsh \e[0m"
-echo -e "\e[92m ---------------------------------------------------------\e[0m"
-
-echo -e "\e[93m********** installing zsh **********\e[0m"
-sudo apt install zsh -y
-
-echo -e "\e[93m********** installing ohmyzsh pre-reqisits **********\e[0m"
-sudo apt install fonts-powerline -y
-sudo apt-get install fzf -y
-
-echo -e "\e[93m********** installing ohmyzsh **********\e[0m"
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# before this step you need to exit ohmyzsh by typing exit
-echo -e "\e[93m********** adding ohmyzsh configurataion **********\e[0m"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-wget -O ".zshrc" https://raw.githubusercontent.com/azeljkovic/shell_linux_setup/main/.zshrc
